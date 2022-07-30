@@ -1,0 +1,23 @@
+server:
+  port: 1234
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/task
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    password: 85902141088
+  jpa:
+    open-in-view: false
+    show-sql: false
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: create-drop
+      naming:
+        implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyJpaCompliantImpl
+    properties:
+      hibernate:
+        globally_quoted_identifiers: true
+        format_sql: true
+        enable_lazy_load_no_trans: true
+
+file-path: src/main/resources/myFile0.csv
