@@ -19,7 +19,7 @@ import static com.example.task.cons.ProjectEndpoints.*;
  */
 
 @RestController
-@RequestMapping(API_TYPE)
+@RequestMapping(API)
 public class CityController {
 
     private final CityService cityService;

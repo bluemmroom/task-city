@@ -38,7 +38,9 @@ public class CityService {
     }
 
     public List<CityDto> getBothTypes(){
-       return new LinkedList<>(fileReadService.readBothTypes());
+        List<CityDto> list = new LinkedList<>(fileReadService.readBothTypes());
+        Collections.sort(list);
+       return list;
     }
 
     public List<Integer> sortedIntegerList() {

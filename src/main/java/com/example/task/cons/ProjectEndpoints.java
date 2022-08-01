@@ -12,7 +12,7 @@ public final class ProjectEndpoints {
         throw new IllegalStateException("ProjectEndpoints class");
     }
 
-    public static final String API_TYPE = "/api";
+    public static final String API = "/api";
     public static final String INTEGER = "/integer-type";
     public static final String STRING = "/string-type";
     public static final String BOTH = "/both-types";
